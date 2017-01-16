@@ -107,6 +107,6 @@ tsd_query_params <- function(
     if (!missing(end)) {
         params <- c(params, end=format_local(Timestamp(end)))
     }
-    params <- c(params, ascii="")
+    params <- c(params, format="ascii")
     return(params)
 }
